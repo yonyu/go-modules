@@ -35,3 +35,4 @@ modify main.go to use mux
 go build .
 ./go-modules
 
+go mod vendor // create a local vendor directory inside the project and downloaded all dependent modules
