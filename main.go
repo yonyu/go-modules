@@ -1,13 +1,22 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+
+	"rsc.io/quote"
+	quotev2 "rsc.io/quote/v2"
+	"rsc.io/sampler"
 
 	"github.com/gorilla/mux"
 )
 
 func main() {
+	fmt.Println(quote.Hello())
+	fmt.Println(quotev2.HelloV2())
+	fmt.Println(sampler.Hello())
+
 	rtr := mux.NewRouter()
 
 	rtr.HandleFunc("/{topic}", func(w http.ResponseWriter, r *http.Request) {

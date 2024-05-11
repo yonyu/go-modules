@@ -2,7 +2,7 @@
 K:\videos\go\Exploring Go Modules by Mike Van Sickle - Pluralsight Jul 2019
 
 
-Go 1.12
+go 1.22.3
 
 
 
@@ -26,6 +26,12 @@ go build .
 ./go-modules
 
 -- import gorilla routing system
-go get -u github/gorilla/mux v1.7.3
+go get -u github.com/gorilla/mux v1.8.1
 
--- notice go.sum file
+-- notice the go.sum file generated
+
+modify main.go to use mux
+
+go build .
+./go-modules
+
